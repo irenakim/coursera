@@ -1,0 +1,80 @@
+body{
+	background-color: white;
+}
+*{box-sizing: border-box;}
+h1{text-align: center;}
+h4{
+	text-align: right;
+	border: 1px solid black;
+}
+.block > div{
+	border: 1px solid black;
+	text-align: left;
+	padding: 10px;
+}
+#b1{background-color: silver;}
+#b2{background-color: silver;}
+#b3{background-color: silver;}
+#b1 > h4 {background-color: aqua;}
+#b2 > h4 {background-color: lime;}
+#b3 > h4 {background-color: yellow;}
+@media (min-width: 992px){
+	.block > div{
+		float: left;
+		width: 32%;
+		margin-right: 10px;
+		height: 200px;
+		position: relative;
+	}
+	.block > div > h4{
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+	p{margin-top: 40px;}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	#b1{
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		width: 48%;
+		height: 150px;
+		position: relative;
+	}
+	#b2{
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		width: 48%;
+		height: 150px;
+		position: relative;
+	}
+	#b3{
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		width: 97%;
+		height: 150px;
+		position: relative;
+	}
+	.block > div > h4{
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+	p{margin-top: 40px;}
+}
+@media (max-width: 767px){
+	.block > div{
+		height: 150px;
+		margin-bottom: 10px;
+		position: relative;
+	}
+	.block > div > h4{
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+	p{margin-top: 40px;}
+}
